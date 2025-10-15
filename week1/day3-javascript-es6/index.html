@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3: JavaScript ES6 & DOM Mastery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="lesson-header">
+            <h1>🚀 JavaScript ES6 & DOM Mastery</h1>
+            <p class="lesson-subtitle">From ES5 to ES2024+ and Beyond</p>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 15%"></div>
+            </div>
+        </header>
+
+        <main class="lesson-content">
+            <!-- Exercise Navigation -->
+            <nav class="exercise-nav">
+                <button class="nav-btn active" data-exercise="evolution">JS Evolution</button>
+                <button class="nav-btn" data-exercise="syntax">Modern Syntax</button>
+                <button class="nav-btn" data-exercise="paradigms">FP vs OOP</button>
+                <button class="nav-btn" data-exercise="dom">DOM Mastery</button>
+                <button class="nav-btn" data-exercise="performance">Performance</button>
+                <button class="nav-btn" data-exercise="project">Task Manager</button>
+            </nav>
+
+            <!-- Exercise 1: JavaScript Evolution -->
+            <section class="exercise-section active" id="evolution">
+                <h2>📈 JavaScript Evolution: ES5 → ES2024+</h2>
+                <div class="exercise-content">
+                    <div class="info-panel">
+                        <h3>🕰️ Timeline of JavaScript Evolution</h3>
+                        <ul class="timeline">
+                            <li><strong>ES5 (2009):</strong> Array methods, strict mode, JSON</li>
+                            <li><strong>ES6/ES2015:</strong> Classes, arrow functions, let/const, modules</li>
+                            <li><strong>ES2017:</strong> async/await, Object.entries/values</li>
+                            <li><strong>ES2020:</strong> Optional chaining, nullish coalescing</li>
+                            <li><strong>ES2022:</strong> Top-level await, private fields</li>
+                            <li><strong>ES2024:</strong> Array grouping, temporal API</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="code-panel">
+                        <h3>🔄 Before vs After: ES5 → ES6+</h3>
+                        <div class="code-comparison">
+                            <div class="before-after">
+                                <h4>❌ ES5 Way (Old)</h4>
+                                <pre><code id="es5-code">// Loading ES5 examples...</code></pre>
+                            </div>
+                            <div class="before-after">
+                                <h4>✅ ES6+ Way (Modern)</h4>
+                                <pre><code id="es6-code">// Loading ES6+ examples...</code></pre>
+                            </div>
+                        </div>
+                        <button class="run-btn" onclick="runEvolutionDemo()">🚀 Run Examples</button>
+                    </div>
+                </div>
+                <div class="output-panel">
+                    <h3>📝 Output & Results</h3>
+                    <div id="evolution-output" class="output-content">
+                        Click "Run Examples" to see the differences in action!
+                    </div>
+                </div>
+            </section>
+
+            <!-- Exercise 2: Modern Syntax Deep Dive -->
+            <section class="exercise-section" id="syntax">
+                <h2>⚡ Modern JavaScript Syntax Mastery</h2>
+                <div class="exercise-content">
+                    <div class="syntax-examples">
+                        <div class="syntax-card">
+                            <h3>🎯 Destructuring</h3>
+                            <button class="demo-btn" onclick="destructuringDemo()">Try Destructuring</button>
+                        </div>
+                        <div class="syntax-card">
+                            <h3>📤 Spread & Rest</h3>
+                            <button class="demo-btn" onclick="spreadRestDemo()">Try Spread/Rest</button>
+                        </div>
+                        <div class="syntax-card">
+                            <h3>🔗 Optional Chaining</h3>
+                            <button class="demo-btn" onclick="optionalChainingDemo()">Try Chaining</button>
+                        </div>
+                        <div class="syntax-card">
+                            <h3>⏰ Async/Await</h3>
+                            <button class="demo-btn" onclick="asyncAwaitDemo()">Try Async</button>
+                        </div>
+                    </div>
+                    <div class="interactive-editor">
+                        <h3>🎮 Interactive Code Editor</h3>
+                        <textarea id="code-editor" placeholder="Write your modern JavaScript here...">
+// Try some ES6+ features:
+const user = { name: 'Alice', age: 25, address: { city: 'NYC' } };
+
+// Destructuring
+const { name, age } = user;
+
+// Optional chaining
+const city = user?.address?.city ?? 'Unknown';
+
+console.log(`${name} is ${age} years old and lives in ${city}`);
+                        </textarea>
+                        <button class="run-btn" onclick="runUserCode()">▶️ Run Code</button>
+                    </div>
+                </div>
+                <div class="output-panel">
+                    <h3>📊 Syntax Demo Results</h3>
+                    <div id="syntax-output" class="output-content">
+                        Click any demo button to see modern JavaScript features in action!
+                    </div>
+                </div>
+            </section>
+
+            <!-- Exercise 3: Functional vs OOP Paradigms -->
+            <section class="exercise-section" id="paradigms">
+                <h2>🔄 Programming Paradigms: Functional vs OOP</h2>
+                <div class="exercise-content">
+                    <div class="paradigm-comparison">
+                        <div class="paradigm-panel">
+                            <h3>🔧 Functional Programming</h3>
+                            <ul>
+                                <li>Pure functions</li>
+                                <li>Immutable data</li>
+                                <li>Array methods (map, filter, reduce)</li>
+                                <li>Function composition</li>
+                            </ul>
+                            <button class="demo-btn" onclick="functionalDemo()">Try Functional</button>
+                        </div>
+                        <div class="paradigm-panel">
+                            <h3>🏗️ Object-Oriented Programming</h3>
+                            <ul>
+                                <li>Classes and objects</li>
+                                <li>Encapsulation</li>
+                                <li>Inheritance</li>
+                                <li>Polymorphism</li>
+                            </ul>
+                            <button class="demo-btn" onclick="oopDemo()">Try OOP</button>
+                        </div>
+                    </div>
+                    <div class="challenge-area">
+                        <h3>🎯 Challenge: Shopping Cart Implementation</h3>
+                        <p>Implement the same shopping cart using both paradigms!</p>
+                        <div class="implementation-tabs">
+                            <button class="tab-btn active" data-tab="fp">Functional Approach</button>
+                            <button class="tab-btn" data-tab="oop">OOP Approach</button>
+                        </div>
+                        <div class="implementation-content">
+                            <div id="fp-impl" class="impl-panel active">
+                                <pre><code id="fp-code">// Functional Programming Implementation</code></pre>
+                            </div>
+                            <div id="oop-impl" class="impl-panel">
+                                <pre><code id="oop-code">// Object-Oriented Implementation</code></pre>
+                            </div>
+                        </div>
+                        <button class="run-btn" onclick="runShoppingCartDemo()">🛒 Test Both Approaches</button>
+                    </div>
+                </div>
+                <div class="output-panel">
+                    <h3>📈 Paradigm Comparison Results</h3>
+                    <div id="paradigm-output" class="output-content">
+                        Ready to explore different programming approaches!
+                    </div>
+                </div>
+            </section>
+
+            <!-- Exercise 4: DOM Mastery -->
+            <section class="exercise-section" id="dom">
+                <h2>🎪 DOM Manipulation Mastery</h2>
+                <div class="exercise-content">
+                    <div class="dom-playground">
+                        <h3>🎮 Interactive DOM Playground</h3>
+                        <div class="dom-controls">
+                            <button onclick="createElements()">➕ Create Elements</button>
+                            <button onclick="modifyStyles()">🎨 Modify Styles</button>
+                            <button onclick="handleEvents()">⚡ Add Events</button>
+                            <button onclick="animateElements()">✨ Animate</button>
+                            <button onclick="clearPlayground()">🗑️ Clear All</button>
+                        </div>
+                        <div id="dom-playground" class="playground-area">
+                            <p>Welcome to the DOM Playground! Use the buttons above to see DOM manipulation in action.</p>
+                        </div>
+                    </div>
+                    <div class="advanced-features">
+                        <h3>🚀 Advanced DOM Features</h3>
+                        <div class="feature-grid">
+                            <div class="feature-card">
+                                <h4>👁️ Intersection Observer</h4>
+                                <button onclick="lazyLoadDemo()">Demo Lazy Loading</button>
+                            </div>
+                            <div class="feature-card">
+                                <h4>📏 Resize Observer</h4>
+                                <button onclick="resizeObserverDemo()">Demo Responsive Components</button>
+                            </div>
+                            <div class="feature-card">
+                                <h4>🎯 Event Delegation</h4>
+                                <button onclick="eventDelegationDemo()">Demo Delegation</button>
+                            </div>
+                            <div class="feature-card">
+                                <h4>⚡ Performance Optimization</h4>
+                                <button onclick="performanceDemo()">Demo Optimization</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="output-panel">
+                    <h3>🔍 DOM Manipulation Results</h3>
+                    <div id="dom-output" class="output-content">
+                        Start experimenting with DOM manipulation techniques!
+                    </div>
+                </div>
+            </section>
+
+            <!-- Exercise 5: Performance Testing -->
+            <section class="exercise-section" id="performance">
+                <h2>⚡ JavaScript Performance & Optimization</h2>
+                <div class="exercise-content">
+                    <div class="performance-tools">
+                        <h3>🔬 Performance Measurement Tools</h3>
+                        <div class="benchmark-controls">
+                            <button onclick="runArrayBenchmark()">📊 Array Methods Benchmark</button>
+                            <button onclick="runDOMBenchmark()">🏃 DOM Operations Speed Test</button>
+                            <button onclick="memoryProfileTest()">💾 Memory Usage Test</button>
+                            <button onclick="realWorldPerformanceTest()">🌍 Real-World Performance</button>
+                        </div>
+                    </div>
+                    <div class="performance-results">
+                        <h3>📈 Performance Metrics</h3>
+                        <div id="performance-charts" class="charts-container">
+                            <canvas id="benchmark-chart" width="400" height="200"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="output-panel">
+                    <h3>⏱️ Performance Test Results</h3>
+                    <div id="performance-output" class="output-content">
+                        Run performance tests to see optimization techniques in action!
+                    </div>
+                </div>
+            </section>
+
+            <!-- Exercise 6: Final Project - Task Manager -->
+            <section class="exercise-section" id="project">
+                <h2>🎯 Final Project: Interactive Task Manager</h2>
+                <div class="exercise-content">
+                    <div class="project-info">
+                        <h3>📋 Project Overview</h3>
+                        <p>Build a complete task management application using everything you've learned!</p>
+                        <div class="features-list">
+                            <h4>✨ Features to Implement:</h4>
+                            <ul>
+                                <li>✅ Add, edit, and delete tasks</li>
+                                <li>🎯 Priority levels and categories</li>
+                                <li>🔍 Real-time search and filtering</li>
+                                <li>💾 Local storage persistence</li>
+                                <li>📱 Responsive design</li>
+                                <li>⚡ Performance optimizations</li>
+                            </ul>
+                        </div>
+                        <button class="start-project-btn" onclick="initializeTaskManager()">🚀 Start Building</button>
+                    </div>
+                    <div class="task-manager-container">
+                        <div id="task-manager" class="hidden">
+                            <!-- Task Manager will be dynamically created here -->
+                        </div>
+                    </div>
+                </div>
+                <div class="output-panel">
+                    <h3>🏗️ Project Progress</h3>
+                    <div id="project-output" class="output-content">
+                        Ready to build your complete JavaScript application!
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="lesson-footer">
+            <div class="navigation-controls">
+                <button id="prev-exercise" class="nav-control" disabled>⬅️ Previous</button>
+                <span class="exercise-counter">Exercise 1 of 6</span>
+                <button id="next-exercise" class="nav-control">Next ➡️</button>
+            </div>
+            <div class="lesson-progress">
+                <p>Progress: <span id="completion-percentage">0%</span> Complete</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="modern-javascript.js"></script>
+    <script src="dom-manipulation.js"></script>
+    <script src="task-manager.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
