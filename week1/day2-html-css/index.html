@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Daily News - Breaking news, politics, sports, and analysis">
+  <title>Breaking: New AI Breakthrough Announced | Daily News</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Skip links for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <a href="#navigation" class="skip-link">Skip to navigation</a>
+
+  <!-- Site-wide header -->
+  <header class="site-header">
+    <div class="header-container">
+      <!-- Site branding -->
+      <div class="site-branding">
+        <h1>
+          <a href="/" aria-label="Daily News - Home">
+            <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=120&h=40&fit=crop&crop=center" alt="Daily News Logo" width="120" height="40" style="object-fit: cover; border-radius: 4px;">
+          </a>
+        </h1>
+        <p class="tagline">Your trusted source for breaking news</p>
+      </div>
+
+      <!-- Main navigation -->
+      <nav id="navigation" aria-label="Main navigation" class="main-nav">
+        <ul class="nav-list">
+          <li><a href="/" aria-current="page">Home</a></li>
+          <li><a href="/politics" aria-describedby="politics-desc">Politics</a></li>
+          <li><a href="/sports">Sports</a></li>
+          <li><a href="/technology">Technology</a></li>
+          <li><a href="/opinion">Opinion</a></li>
+        </ul>
+        <!-- Hidden description for screen readers -->
+        <div id="politics-desc" class="sr-only">
+          Political news and analysis
+        </div>
+      </nav>
+
+      <!-- Search functionality -->
+      <div class="search-container">
+        <form role="search" aria-label="Search articles">
+          <label for="search-input" class="sr-only">Search articles</label>
+          <input 
+            type="search" 
+            id="search-input" 
+            name="search" 
+            placeholder="Search news..."
+            aria-describedby="search-help"
+            aria-expanded="false"
+            autocomplete="off"
+          >
+          <button type="submit" aria-label="Submit search">
+            <span aria-hidden="true">🔍</span>
+          </button>
+          <div id="search-help" class="sr-only">
+            Search for articles by keyword or topic
+          </div>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb navigation -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol class="breadcrumb-list">
+      <li><a href="/">Home</a></li>
+      <li><a href="/technology">Technology</a></li>
+      <li aria-current="page">AI Breakthrough</li>
+    </ol>
+  </nav>
+
+  <!-- Main content area -->
+  <main id="main-content" tabindex="-1">
+    <div class="main-container">
+      
+      <!-- Breaking news banner -->
+      <div class="breaking-news" role="banner" aria-label="Breaking news alert">
+        <span class="breaking-label" aria-label="Breaking news">⚡ BREAKING</span>
+        <p>Revolutionary AI system achieves breakthrough in quantum computing</p>
+      </div>
+
+      <!-- Primary article -->
+      <article class="main-article" aria-labelledby="article-title">
+        
+        <!-- Article header -->
+        <header class="article-header">
+          <div class="article-category">
+            <a href="/technology" class="category-link">Technology</a>
+          </div>
+          
+          <h1 id="article-title" class="article-title">
+            Revolutionary AI System Achieves Quantum Computing Breakthrough
+          </h1>
+          
+          <p class="article-subtitle">
+            Scientists at Tech University develop hybrid system that could revolutionize encryption and scientific computing
+          </p>
+          
+          <!-- Article metadata -->
+          <div class="article-meta">
+            <div class="author-info">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face" alt="" class="author-avatar" width="40" height="40">
+              <div class="author-details">
+                <span class="author-name">Dr. Jane Reporter</span>
+                <span class="author-title">Technology Correspondent</span>
+              </div>
+            </div>
+            
+            <div class="publication-info">
+              <time datetime="2025-10-15T14:30:00Z" class="publish-date">
+                October 15, 2025 at 2:30 PM
+              </time>
+              <div class="reading-time" aria-label="Estimated reading time">
+                <span aria-hidden="true">⏱️</span> 5 min read
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Article image -->
+        <figure class="article-figure">
+          <img 
+            src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=400&fit=crop&crop=center" 
+            alt="Scientists working with quantum computer in advanced laboratory setting"
+            class="article-image"
+            width="800"
+            height="400"
+          >
+          <figcaption>
+            Researchers at Tech University's Quantum Lab demonstrate the new hybrid AI-quantum system.
+            <span class="photo-credit">Photo by Alex Scientist</span>
+          </figcaption>
+        </figure>
+
+        <!-- Article content -->
+        <div class="article-content">
+          <section aria-labelledby="summary-heading">
+            <h2 id="summary-heading" class="content-heading">Key Findings</h2>
+            <p class="lead-paragraph">
+              A groundbreaking collaboration between artificial intelligence and quantum computing 
+              has yielded unprecedented results in computational power and efficiency. The hybrid 
+              system developed at Tech University represents a significant leap forward in both fields.
+            </p>
+            
+            <ul class="key-points">
+              <li>50x improvement in complex calculation speeds</li>
+              <li>Revolutionary approach to quantum error correction</li>
+              <li>Potential applications in cryptography and drug discovery</li>
+              <li>Open-source framework to be released next year</li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="details-heading">
+            <h2 id="details-heading" class="content-heading">Technical Details</h2>
+            <p>
+              The research team, led by Dr. Sarah Chen, has successfully integrated machine learning 
+              algorithms with quantum processors to create a system that can adapt and optimize 
+              quantum operations in real-time.
+            </p>
+            
+            <blockquote class="article-quote" cite="https://example.com/interview">
+              <p>
+                "This breakthrough represents the convergence of two of the most powerful 
+                computational paradigms of our time. We're seeing results that neither 
+                system could achieve independently."
+              </p>
+              <footer>
+                <cite>Dr. Sarah Chen, Lead Researcher</cite>
+              </footer>
+            </blockquote>
+            
+            <p>
+              The implications for industries ranging from pharmaceuticals to cybersecurity 
+              are profound. Early testing suggests that complex molecular simulations that 
+              previously took months could be completed in hours.
+            </p>
+          </section>
+
+          <section aria-labelledby="implications-heading">
+            <h2 id="implications-heading" class="content-heading">Future Implications</h2>
+            <p>
+              Industry experts predict this technology could accelerate drug discovery, 
+              enhance financial modeling, and revolutionize cryptographic security within the next decade.
+            </p>
+          </section>
+        </div>
+
+        <!-- Article footer -->
+        <footer class="article-footer">
+          <div class="article-tags">
+            <h3 class="tags-heading">Topics:</h3>
+            <ul class="tags-list">
+              <li><a href="/tags/artificial-intelligence" class="tag">Artificial Intelligence</a></li>
+              <li><a href="/tags/quantum-computing" class="tag">Quantum Computing</a></li>
+              <li><a href="/tags/research" class="tag">Research</a></li>
+              <li><a href="/tags/technology" class="tag">Technology</a></li>
+            </ul>
+          </div>
+          
+          <div class="share-section">
+            <h3 class="share-heading">Share this article:</h3>
+            <div class="share-buttons">
+              <button type="button" aria-label="Share on Twitter" class="share-btn twitter">
+                <span aria-hidden="true">🐦</span> Twitter
+              </button>
+              <button type="button" aria-label="Share on LinkedIn" class="share-btn linkedin">
+                <span aria-hidden="true">💼</span> LinkedIn
+              </button>
+              <button type="button" aria-label="Copy link to clipboard" class="share-btn copy">
+                <span aria-hidden="true">🔗</span> Copy Link
+              </button>
+            </div>
+          </div>
+        </footer>
+      </article>
+
+      <!-- Related content sidebar -->
+      <aside class="sidebar" aria-labelledby="related-heading">
+        <section class="related-articles">
+          <h2 id="related-heading" class="sidebar-heading">Related Stories</h2>
+          
+          <article class="related-article">
+            <img 
+              src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=150&h=100&fit=crop&crop=center" 
+              alt="Computer chip with circuit patterns"
+              class="related-image"
+              width="150"
+              height="100"
+            >
+            <div class="related-content">
+              <h3 class="related-title">
+                <a href="/article/quantum-chips">Next-Gen Quantum Chips Enter Production</a>
+              </h3>
+              <p class="related-excerpt">
+                Major semiconductor companies announce quantum processor manufacturing plans.
+              </p>
+              <time datetime="2025-10-14" class="related-date">Oct 14, 2025</time>
+            </div>
+          </article>
+
+          <article class="related-article">
+            <img 
+              src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=150&h=100&fit=crop&crop=center" 
+              alt="AI laboratory with researchers"
+              class="related-image"
+              width="150"
+              height="100"
+            >
+            <div class="related-content">
+              <h3 class="related-title">
+                <a href="/article/ai-research">University AI Research Gets $50M Funding</a>
+              </h3>
+              <p class="related-excerpt">
+                Federal grant will support advanced AI research across multiple institutions.
+              </p>
+              <time datetime="2025-10-13" class="related-date">Oct 13, 2025</time>
+            </div>
+          </article>
+        </section>
+
+        <!-- Newsletter signup -->
+        <section class="newsletter-signup">
+          <h2 class="newsletter-heading">Stay Informed</h2>
+          <p class="newsletter-description">
+            Get the latest technology news delivered to your inbox daily.
+          </p>
+          
+          <form class="newsletter-form" aria-label="Newsletter signup">
+            <div class="form-group">
+              <label for="newsletter-email" class="sr-only">Email address for newsletter</label>
+              <input 
+                type="email" 
+                id="newsletter-email" 
+                name="email" 
+                placeholder="Enter your email"
+                required
+                aria-describedby="email-help"
+                autocomplete="email"
+              >
+              <div id="email-help" class="sr-only">
+                We'll send you daily tech news updates
+              </div>
+            </div>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+          
+          <p class="newsletter-privacy">
+            <small>
+              We respect your privacy. 
+              <a href="/privacy-policy">Read our privacy policy</a>.
+            </small>
+          </p>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      
+      <!-- Footer navigation -->
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-section">
+          <h3 class="footer-heading">News</h3>
+          <ul class="footer-list">
+            <li><a href="/breaking">Breaking News</a></li>
+            <li><a href="/politics">Politics</a></li>
+            <li><a href="/sports">Sports</a></li>
+            <li><a href="/technology">Technology</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3 class="footer-heading">About</h3>
+          <ul class="footer-list">
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/team">Our Team</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/careers">Careers</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3 class="footer-heading">Legal</h3>
+          <ul class="footer-list">
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/terms">Terms of Service</a></li>
+            <li><a href="/accessibility">Accessibility Statement</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Contact information -->
+      <div class="footer-contact">
+        <h3 class="footer-heading">Contact Information</h3>
+        <address class="contact-info">
+          <p>Daily News<br>
+          123 News Street<br>
+          New York, NY 10001</p>
+          <p>Phone: <a href="tel:+15551234567">(555) 123-4567</a></p>
+          <p>Email: <a href="mailto:contact@dailynews.com">contact@dailynews.com</a></p>
+        </address>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 Daily News. All rights reserved.</p>
+      <div class="accessibility-help">
+        <a href="/accessibility" aria-describedby="accessibility-note">
+          Report Accessibility Issues
+        </a>
+        <div id="accessibility-note" class="sr-only">
+          Contact us if you encounter any accessibility barriers on this site
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
